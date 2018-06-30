@@ -1,6 +1,8 @@
 //Change the whole class to implement the hash algorithm in the block
 //just for test
 #pragma once
+#include <string>
+#include <iostream>
 #include <time.h>
 #include <cstdio>
 #include <cstdlib>
@@ -12,7 +14,7 @@ public:
     srand(time(NULL));
     int tmp = rand();
     char buffer[257];
-    sprintf_s(buffer, "%d", tmp);
+    sprintf(buffer, "%d", tmp);
     std::string hash = buffer;
     return hash;
   };

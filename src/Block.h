@@ -65,7 +65,7 @@ private:
   void AddTimeStamp(unsigned long long timesteps)
   {
     char buffer[20];
-    sprintf_s(buffer, "%d", timesteps);
+    sprintf(buffer, "%d", timesteps);
     c_time.assign(buffer);
   }
 

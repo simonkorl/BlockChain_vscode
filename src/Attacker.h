@@ -10,7 +10,7 @@ public:
   
   Attacker()
   {
-    m_type = User::Type::Attack;
+    m_type = Attack;
   }
 
   //Corrupt change the type and add it to a member vector
